@@ -137,28 +137,42 @@ class __TwigTemplate_52478c78cc2dc84e91c4fc4ae0ec8604fbf23c98abec2a45ce05c49a5e6
         echo "
             ";
         // line 27
+        $context["options"] = $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "options", array());
+        // line 28
+        echo "            ";
+        if (($this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array()), "create", array()) && $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array()))) {
+            // line 29
+            echo "                ";
+            $context["options"] = array_unique(twig_array_merge((isset($context["options"]) ? $context["options"] : null), (((isset($context["value"]) || array_key_exists("value", $context))) ? (_twig_default_filter((isset($context["value"]) ? $context["value"] : null), array())) : (array()))));
+            // line 30
+            echo "            ";
+        }
+        // line 31
+        echo "
+            ";
+        // line 32
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "options", array()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["options"]) ? $context["options"] : null));
         foreach ($context['_seq'] as $context["key"] => $context["item_value"]) {
-            // line 28
+            // line 33
             echo "                ";
             if (twig_test_iterable($context["item_value"])) {
-                // line 29
+                // line 34
                 echo "                    <optgroup label=\"";
                 echo twig_escape_filter($this->env, $context["key"], "html", null, true);
                 echo "\">
                         ";
-                // line 30
+                // line 35
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($context["item_value"]);
                 foreach ($context['_seq'] as $context["subkey"] => $context["suboption"]) {
-                    // line 31
+                    // line 36
                     echo "                            ";
                     $context["selected"] = (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array())) ? ($context["suboption"]) : ($context["subkey"]));
-                    // line 32
+                    // line 37
                     echo "                            ";
                     $context["item_value"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array()) && $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array()))) ? ($context["suboption"]) : ($context["subkey"]));
-                    // line 33
+                    // line 38
                     echo "                            <option ";
                     if ((($context["subkey"] == (isset($context["value"]) ? $context["value"] : null)) || ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array()) && twig_in_filter((isset($context["selected"]) ? $context["selected"] : null), (isset($context["value"]) ? $context["value"] : null))))) {
                         echo "selected=\"selected\"";
@@ -167,9 +181,9 @@ class __TwigTemplate_52478c78cc2dc84e91c4fc4ae0ec8604fbf23c98abec2a45ce05c49a5e6
                     echo twig_escape_filter($this->env, $context["suboption"], "html", null, true);
                     echo "\">
                                 ";
-                    // line 34
+                    // line 39
                     if ($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["grav"]) ? $context["grav"] : null), "twig", array(), "any", false, true), "twig", array(), "any", false, true), "filters", array(), "any", false, true), "tu", array(), "array", true, true)) {
-                        // line 35
+                        // line 40
                         echo "                                    ";
                         echo $this->env->getExtension('Grav\Plugin\Admin\Twig\AdminTwigExtension')->tuFilter($context["suboption"]);
                     } else {
@@ -177,24 +191,24 @@ class __TwigTemplate_52478c78cc2dc84e91c4fc4ae0ec8604fbf23c98abec2a45ce05c49a5e6
                         echo "
                                 ";
                     }
-                    // line 37
+                    // line 42
                     echo "                            </option>
                         ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['subkey'], $context['suboption'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 39
+                // line 44
                 echo "                    </optgroup>
                 ";
             } else {
-                // line 41
+                // line 46
                 echo "                    ";
                 $context["selected"] = (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array())) ? ($context["item_value"]) : ($context["key"]));
-                // line 42
+                // line 47
                 echo "                    ";
                 $context["val"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array()) && $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array()))) ? ($context["item_value"]) : ($context["key"]));
-                // line 43
+                // line 48
                 echo "                    <option ";
                 if ((($context["key"] == (isset($context["value"]) ? $context["value"] : null)) || ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array()) && twig_in_filter((isset($context["selected"]) ? $context["selected"] : null), (isset($context["value"]) ? $context["value"] : null))))) {
                     echo "selected=\"selected\"";
@@ -210,13 +224,13 @@ class __TwigTemplate_52478c78cc2dc84e91c4fc4ae0ec8604fbf23c98abec2a45ce05c49a5e6
                 echo "</option>
                 ";
             }
-            // line 45
+            // line 50
             echo "            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['key'], $context['item_value'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 46
+        // line 51
         echo "
         </select>
     </div>
@@ -235,7 +249,7 @@ class __TwigTemplate_52478c78cc2dc84e91c4fc4ae0ec8604fbf23c98abec2a45ce05c49a5e6
 
     public function getDebugInfo()
     {
-        return array (  220 => 46,  214 => 45,  198 => 43,  195 => 42,  192 => 41,  188 => 39,  181 => 37,  173 => 35,  171 => 34,  162 => 33,  159 => 32,  156 => 31,  152 => 30,  147 => 29,  144 => 28,  140 => 27,  137 => 26,  127 => 25,  124 => 24,  118 => 22,  115 => 21,  108 => 20,  103 => 19,  98 => 18,  93 => 17,  88 => 16,  83 => 15,  78 => 14,  71 => 13,  65 => 12,  59 => 11,  55 => 10,  46 => 9,  43 => 8,  37 => 5,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  234 => 51,  228 => 50,  212 => 48,  209 => 47,  206 => 46,  202 => 44,  195 => 42,  187 => 40,  185 => 39,  176 => 38,  173 => 37,  170 => 36,  166 => 35,  161 => 34,  158 => 33,  154 => 32,  151 => 31,  148 => 30,  145 => 29,  142 => 28,  140 => 27,  137 => 26,  127 => 25,  124 => 24,  118 => 22,  115 => 21,  108 => 20,  103 => 19,  98 => 18,  93 => 17,  88 => 16,  83 => 15,  78 => 14,  71 => 13,  65 => 12,  59 => 11,  55 => 10,  46 => 9,  43 => 8,  37 => 5,  32 => 4,  29 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -274,7 +288,12 @@ class __TwigTemplate_52478c78cc2dc84e91c4fc4ae0ec8604fbf23c98abec2a45ce05c49a5e6
                 >
             {% if field.placeholder %}<option value=\"\" disabled selected>{% if grav.twig.twig.filters['tu'] is defined %}{{ field.placeholder|tu|raw }}{% else %}{{ field.placeholder|t|raw }}{% endif %}</option>{% endif %}
 
-            {% for key, item_value in field.options %}
+            {% set options = field.options %}
+            {% if field.selectize.create and field.multiple %}
+                {% set options = options|merge(value|default([]))|array_unique %}
+            {% endif %}
+
+            {% for key, item_value in options %}
                 {% if item_value is iterable %}
                     <optgroup label=\"{{ key }}\">
                         {%for subkey, suboption in item_value %}

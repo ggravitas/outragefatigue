@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/jerrybrahm/repos/outrage/user/plugins/admin/blueprints/admin/pages/raw.yaml',
-    'modified' => 1535498579,
+    'modified' => 1538527109,
     'data' => [
         'rules' => [
             'slug' => [
@@ -22,6 +22,9 @@ return [
                             'type' => 'tab',
                             'title' => 'PLUGIN_ADMIN.CONTENT',
                             'fields' => [
+                                'xss_check' => [
+                                    'type' => 'xss'
+                                ],
                                 'frontmatter' => [
                                     'classes' => 'frontmatter',
                                     'type' => 'editor',

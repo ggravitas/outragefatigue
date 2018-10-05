@@ -154,24 +154,24 @@ class __TwigTemplate_3e263861fa7f9a84f32eeb17a76cf0d5bf43c80f2610d01aa6776caf6eb
             echo " ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "wrapper_classes", array()), "html", null, true);
             echo "\">
-                        <span class=\"form-description\">
-                            ";
+                    <span class=\"form-description\">
+                        ";
             // line 36
             if ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "markdown", array())) {
                 // line 37
-                echo "                                ";
+                echo "                            ";
                 echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFunction($this->env->getExtension('Grav\Plugin\Admin\Twig\AdminTwigExtension')->tuFilter($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "description", array())), false);
                 echo "
-                            ";
+                        ";
             } else {
                 // line 39
-                echo "                                ";
+                echo "                            ";
                 echo $this->env->getExtension('Grav\Plugin\Admin\Twig\AdminTwigExtension')->tuFilter($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "description", array()));
                 echo "
-                            ";
+                        ";
             }
             // line 41
-            echo "                        </span>
+            echo "                    </span>
                 </div>
             ";
         }
@@ -240,13 +240,13 @@ class __TwigTemplate_3e263861fa7f9a84f32eeb17a76cf0d5bf43c80f2610d01aa6776caf6eb
             {% if field.resizer is not defined or field.resizer not in ['off', 'false', 0] %}<div class=\"grav-editor-resizer\"></div>{% endif %}
             {% if field.description %}
                 <div class=\"form-extra-wrapper {{ field.size }} {{ field.wrapper_classes }}\">
-                        <span class=\"form-description\">
-                            {% if field.markdown %}
-                                {{ field.description|tu|markdown(false)|raw }}
-                            {% else %}
-                                {{ field.description|tu|raw }}
-                            {% endif %}
-                        </span>
+                    <span class=\"form-description\">
+                        {% if field.markdown %}
+                            {{ field.description|tu|markdown(false)|raw }}
+                        {% else %}
+                            {{ field.description|tu|raw }}
+                        {% endif %}
+                    </span>
                 </div>
             {% endif %}
         </div>

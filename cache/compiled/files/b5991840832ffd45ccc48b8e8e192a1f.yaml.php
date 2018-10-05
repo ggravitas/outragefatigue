@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/jerrybrahm/repos/outrage/system/blueprints/pages/default.yaml',
-    'modified' => 1535498559,
+    'modified' => 1538527076,
     'data' => [
         'title' => 'PLUGIN_ADMIN.DEFAULT',
         'rules' => [
@@ -23,6 +23,9 @@ return [
                             'type' => 'tab',
                             'title' => 'PLUGIN_ADMIN.CONTENT',
                             'fields' => [
+                                'xss_check' => [
+                                    'type' => 'xss'
+                                ],
                                 'header.title' => [
                                     'type' => 'text',
                                     'autofocus' => true,

@@ -22,105 +22,108 @@ class __TwigTemplate_38c348421784f4249ece38389a7f0f8cd8c81a1a9506f960986b8438d44
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 17
+        $context["macro"] = $this;
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 17
+    // line 19
     public function block_global_attributes($context, array $blocks = array())
     {
-        // line 18
+        // line 20
         echo "    data-grav-selectize=\"";
         echo twig_escape_filter($this->env, twig_jsonencode_filter((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array(), "any", true, true)) ? ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "selectize", array())) : (array()))), "html_attr");
         echo "\"
     data-grav-field=\"select\"
     data-grav-disabled=\"";
-        // line 20
+        // line 22
         echo (((null === (isset($context["originalValue"]) ? $context["originalValue"] : null))) ? ("true") : ("false"));
         echo "\"
     data-grav-default=\"";
-        // line 21
+        // line 23
         echo twig_escape_filter($this->env, twig_jsonencode_filter($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "default", array())), "html_attr");
         echo "\"
 ";
     }
 
-    // line 24
+    // line 26
     public function block_input($context, array $blocks = array())
     {
-        // line 25
+        // line 27
         echo "
     ";
-        // line 26
-        $context["start_page"] = (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "start_route", array())) ? ($this->getAttribute((isset($context["pages"]) ? $context["pages"] : null), "find", array(0 => $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "start_route", array())), "method")) : (null));
-        // line 27
-        echo "    ";
-        $context["show_all"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_all", array()) === false)) ? (false) : (true));
         // line 28
-        echo "    ";
-        $context["show_fullpath"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_fullpath", array()) === true)) ? (true) : (false));
+        $context["start_page"] = (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "start_route", array())) ? ($this->getAttribute((isset($context["pages"]) ? $context["pages"] : null), "find", array(0 => $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "start_route", array())), "method")) : (null));
         // line 29
         echo "    ";
-        $context["show_slug"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_slug", array()) === true)) ? (true) : (false));
+        $context["show_all"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_all", array()) === false)) ? (false) : (true));
         // line 30
         echo "    ";
-        $context["show_modular"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_modular", array()) === true)) ? (true) : (false));
+        $context["show_fullpath"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_fullpath", array()) === true)) ? (true) : (false));
         // line 31
         echo "    ";
-        $context["limit_levels"] = (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "limit_levels", array())) ? ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "limit_levels", array())) : (false));
+        $context["show_slug"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_slug", array()) === true)) ? (true) : (false));
         // line 32
-        echo "
-    ";
+        echo "    ";
+        $context["show_modular"] = ((($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_modular", array()) === true)) ? (true) : (false));
         // line 33
-        $context["page_list"] = $this->getAttribute($this->getAttribute((isset($context["grav"]) ? $context["grav"] : null), "pages", array()), "getList", array(0 => (isset($context["start_page"]) ? $context["start_page"] : null), 1 => 0, 2 => true, 3 => (isset($context["show_all"]) ? $context["show_all"] : null), 4 => (isset($context["show_fullpath"]) ? $context["show_fullpath"] : null), 5 => (isset($context["show_slug"]) ? $context["show_slug"] : null), 6 => (isset($context["show_modular"]) ? $context["show_modular"] : null), 7 => (isset($context["limit_levels"]) ? $context["limit_levels"] : null)), "method");
+        echo "    ";
+        $context["limit_levels"] = (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "limit_levels", array())) ? ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "limit_levels", array())) : (false));
         // line 34
         echo "
-    <div class=\"form-select-wrapper ";
+    ";
         // line 35
+        $context["page_list"] = $this->getAttribute($this->getAttribute((isset($context["grav"]) ? $context["grav"] : null), "pages", array()), "getList", array(0 => (isset($context["start_page"]) ? $context["start_page"] : null), 1 => 0, 2 => true, 3 => (isset($context["show_all"]) ? $context["show_all"] : null), 4 => (isset($context["show_fullpath"]) ? $context["show_fullpath"] : null), 5 => (isset($context["show_slug"]) ? $context["show_slug"] : null), 6 => (isset($context["show_modular"]) ? $context["show_modular"] : null), 7 => (isset($context["limit_levels"]) ? $context["limit_levels"] : null)), "method");
+        // line 36
+        echo "
+    <div class=\"form-select-wrapper ";
+        // line 37
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "size", array()), "html", null, true);
         echo "\">
         <select class=\"";
-        // line 36
+        // line 38
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "classes", array()), "html", null, true);
         echo "\" name=\"";
         echo twig_escape_filter($this->env, ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->fieldNameFilter(((isset($context["scope"]) ? $context["scope"] : null) . $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "name", array()))) . (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array())) ? ("[]") : (""))), "html", null, true);
         echo "\"
                 ";
-        // line 37
+        // line 39
         if (twig_in_filter($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "autofocus", array()), array(0 => "on", 1 => "true", 2 => 1))) {
             echo "autofocus=\"autofocus\"";
         }
-        // line 38
+        // line 40
         echo "                ";
         if (twig_in_filter($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "novalidate", array()), array(0 => "on", 1 => "true", 2 => 1))) {
             echo "novalidate=\"novalidate\"";
         }
-        // line 39
+        // line 41
         echo "                ";
         if (twig_in_filter($this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "validate", array()), "required", array()), array(0 => "on", 1 => "true", 2 => 1))) {
             echo "required=\"required\"";
         }
-        // line 40
+        // line 42
         echo "                ";
         if (twig_in_filter($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "multiple", array()), array(0 => "on", 1 => "true", 2 => 1))) {
             echo "multiple=\"multiple\"";
         }
-        // line 41
+        // line 43
         echo "                ";
         if (($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "disabled", array()) || (isset($context["isDisabledToggleable"]) ? $context["isDisabledToggleable"] : null))) {
             echo "disabled=\"disabled\"";
         }
-        // line 42
+        // line 44
         echo "                >
         ";
-        // line 43
+        // line 45
         if ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "show_root", array())) {
-            // line 44
+            // line 46
             echo "            <option value=\"/\">/ (root)</option>
         ";
         }
-        // line 46
+        // line 48
         echo "        ";
-        echo $this->getAttribute($this, "page_options", array(0 => $context, 1 => (isset($context["page_list"]) ? $context["page_list"] : null)), "method");
+        echo $context["macro"]->getpage_options($context, (isset($context["page_list"]) ? $context["page_list"] : null));
         echo "
         </select>
     </div>
@@ -215,7 +218,7 @@ class __TwigTemplate_38c348421784f4249ece38389a7f0f8cd8c81a1a9506f960986b8438d44
 
     public function getDebugInfo()
     {
-        return array (  179 => 13,  175 => 12,  172 => 11,  169 => 10,  158 => 8,  153 => 7,  150 => 6,  147 => 5,  144 => 4,  131 => 3,  122 => 46,  118 => 44,  116 => 43,  113 => 42,  108 => 41,  103 => 40,  98 => 39,  93 => 38,  89 => 37,  83 => 36,  79 => 35,  76 => 34,  74 => 33,  71 => 32,  68 => 31,  65 => 30,  62 => 29,  59 => 28,  56 => 27,  54 => 26,  51 => 25,  48 => 24,  42 => 21,  38 => 20,  32 => 18,  29 => 17,  11 => 1,);
+        return array (  182 => 13,  178 => 12,  175 => 11,  172 => 10,  161 => 8,  156 => 7,  153 => 6,  150 => 5,  147 => 4,  134 => 3,  125 => 48,  121 => 46,  119 => 45,  116 => 44,  111 => 43,  106 => 42,  101 => 41,  96 => 40,  92 => 39,  86 => 38,  82 => 37,  79 => 36,  77 => 35,  74 => 34,  71 => 33,  68 => 32,  65 => 31,  62 => 30,  59 => 29,  57 => 28,  54 => 27,  51 => 26,  45 => 23,  41 => 22,  35 => 20,  32 => 19,  28 => 1,  26 => 17,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -243,6 +246,8 @@ class __TwigTemplate_38c348421784f4249ece38389a7f0f8cd8c81a1a9506f960986b8438d44
         <option {% if page_route == value or (field.multiple and page_route in value) %}selected=\"selected\"{% endif %} value=\"{{ page_route }}\">{{ option|raw }}</option>
     {% endfor %}
 {% endmacro %}
+
+{% import _self as macro %}
 
 {% block global_attributes %}
     data-grav-selectize=\"{{ (field.selectize is defined ? field.selectize : {})|json_encode|e('html_attr') }}\"
@@ -273,7 +278,7 @@ class __TwigTemplate_38c348421784f4249ece38389a7f0f8cd8c81a1a9506f960986b8438d44
         {% if field.show_root %}
             <option value=\"/\">/ (root)</option>
         {% endif %}
-        {{ _self.page_options(_context, page_list) }}
+        {{ macro.page_options(_context, page_list) }}
         </select>
     </div>
 {% endblock %}

@@ -117,7 +117,7 @@ class __TwigTemplate_78c29652f2724197bd3830635a0ed5ba75696c128f02f99106e9d7e7f5f
         echo "
         ";
         // line 46
-        $this->loadTemplate("blog.html.twig", "blog.html.twig", 46, "357166631")->display(array_merge($context, array("blog" => (isset($context["page"]) ? $context["page"] : null))));
+        $this->loadTemplate("blog.html.twig", "blog.html.twig", 46, "316108174")->display(array_merge($context, array("blog" => (isset($context["page"]) ? $context["page"] : null))));
         // line 94
         echo "        </section>
 
@@ -270,7 +270,7 @@ class __TwigTemplate_78c29652f2724197bd3830635a0ed5ba75696c128f02f99106e9d7e7f5f
 
 
 /* blog.html.twig */
-class __TwigTemplate_78c29652f2724197bd3830635a0ed5ba75696c128f02f99106e9d7e7f5f599cd_357166631 extends Twig_Template
+class __TwigTemplate_78c29652f2724197bd3830635a0ed5ba75696c128f02f99106e9d7e7f5f599cd_316108174 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
