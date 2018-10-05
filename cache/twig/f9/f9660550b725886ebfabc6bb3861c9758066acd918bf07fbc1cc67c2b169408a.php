@@ -256,6 +256,6 @@ class __TwigTemplate_92377b68f748b6aaa3f951ebc5e8dbb8ed68b83697aef19727329bc89fd
     <a class=\"btn\" href=\"{{ feed_url }}.rss\"><i class=\"fa fa-rss-square\"></i> RSS</a>
 </div>
 {% endif %}
-", "partials/sidebar.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark-open-publishing/templates/partials/sidebar.html.twig");
+", "partials/sidebar.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark-open-publishing/templates/partials/sidebar.html.twig");
     }
 }

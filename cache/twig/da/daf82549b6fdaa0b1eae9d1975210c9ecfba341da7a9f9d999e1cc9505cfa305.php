@@ -113,6 +113,6 @@ class __TwigTemplate_783ab934ef0a6e9e5de6bb5152c3d1c4af02cb0192b46bef3149d3912e4
 
   <div class=\"fb-comments\" data-href=\"{{ url|default(page.url(true, true))|e('html_attr') }}\" data-numposts=\"{{ num_posts|e('html_attr') }}\" data-colorscheme=\"{{ colorscheme|e('html_attr') }}\" data-order-by=\"{{ order_by|e('html_attr') }}\" data-width=\"{{ width|e('html_attr') }}\"></div>
 </div>
-", "plugins/jscomments/facebook.html.twig", "/Users/jerrybrahm/repos/outrage/user/plugins/jscomments/templates/plugins/jscomments/facebook.html.twig");
+", "plugins/jscomments/facebook.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/plugins/jscomments/templates/plugins/jscomments/facebook.html.twig");
     }
 }

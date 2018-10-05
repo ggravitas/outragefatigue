@@ -76,6 +76,6 @@ class __TwigTemplate_dc3c9df5b49a685795571e042182456a2be5bf0c94d6e5f4f0a6ecbafdd
 {% else %}
   {% include('@images/grav-logo.svg') %}
 {% endif %}
-</a>", "partials/logo.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark/templates/partials/logo.html.twig");
+</a>", "partials/logo.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark/templates/partials/logo.html.twig");
     }
 }

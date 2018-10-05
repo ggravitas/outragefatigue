@@ -78,6 +78,6 @@ class __TwigTemplate_204c889c0e72567c260ffa0695eacbdfef280b8d3a34a2e5f2556cef4e0
     {% endfor %}
 </span>
 {% endif %}
-", "partials/blog/taxonomy.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark/templates/partials/blog/taxonomy.html.twig");
+", "partials/blog/taxonomy.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark/templates/partials/blog/taxonomy.html.twig");
     }
 }

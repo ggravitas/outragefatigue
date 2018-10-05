@@ -76,6 +76,6 @@ class __TwigTemplate_71609e9c0c57079d8054438604a7aeb163ba87a78a6374f93a5815463b9
         {{ content }}
     </section>
     <i id=\"to-start\" class=\"pulse fa fa-angle-down\"></i>
-</section>", "partials/hero.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark/templates/partials/hero.html.twig");
+</section>", "partials/hero.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark/templates/partials/hero.html.twig");
     }
 }

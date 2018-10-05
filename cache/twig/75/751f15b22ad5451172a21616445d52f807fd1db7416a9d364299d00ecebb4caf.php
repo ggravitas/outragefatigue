@@ -109,6 +109,6 @@ class __TwigTemplate_429fa1b13f217375f51d3765574b804e5767d83dafe2819cbc183d85e47
         </div>
     {% endfor %}
     </div>
-{% endif %}", "partials/messages.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark/templates/partials/messages.html.twig");
+{% endif %}", "partials/messages.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark/templates/partials/messages.html.twig");
     }
 }

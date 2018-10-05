@@ -164,6 +164,6 @@ class __TwigTemplate_b090616004501190974f0c0a2cd1b4bbe9b5f3580fe8a1298968bd97027
       {% endif %}
     {% endif %}
 {% endif %}
-", "partials/blog/title.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark-open-publishing/templates/partials/blog/title.html.twig");
+", "partials/blog/title.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark-open-publishing/templates/partials/blog/title.html.twig");
     }
 }

@@ -81,6 +81,6 @@ class __TwigTemplate_bfc6143e064e0bf73353cef36e9a2a641740efa6c92a895ce3502911575
     {
         return new Twig_Source("{% for meta in page.metadata %}
     <meta {% if meta.name %}name=\"{{ meta.name }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content }}\" {% endif %}/>
-{% endfor %}", "partials/metadata.html.twig", "/Users/jerrybrahm/repos/outrage/system/templates/partials/metadata.html.twig");
+{% endfor %}", "partials/metadata.html.twig", "/Users/jerrybrahm/repos/outragefatigue/system/templates/partials/metadata.html.twig");
     }
 }

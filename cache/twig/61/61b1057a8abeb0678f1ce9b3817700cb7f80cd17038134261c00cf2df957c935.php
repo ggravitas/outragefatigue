@@ -167,6 +167,6 @@ $context["paginate"], "isDeltaBorder", array())) {
 </ul>
 
 {% endif %}
-", "partials/pagination.html.twig", "/Users/jerrybrahm/repos/outrage/user/plugins/pagination/templates/partials/pagination.html.twig");
+", "partials/pagination.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/plugins/pagination/templates/partials/pagination.html.twig");
     }
 }

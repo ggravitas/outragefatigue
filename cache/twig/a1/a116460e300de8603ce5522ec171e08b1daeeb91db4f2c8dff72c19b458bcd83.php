@@ -64,6 +64,6 @@ class __TwigTemplate_682dca87b12f9ff500fceccfec83554458571b7950612dadf1a88df5e23
 {% block content %}
     {{ page.content }}
 {% endblock %}
-", "default.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark/templates/default.html.twig");
+", "default.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark/templates/default.html.twig");
     }
 }

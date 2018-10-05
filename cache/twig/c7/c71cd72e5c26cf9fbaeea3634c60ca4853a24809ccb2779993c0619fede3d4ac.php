@@ -275,6 +275,6 @@ class __TwigTemplate_f06044170f87a69cbae107ab55677b292c46e4ecb94b1dc3b92b443e7ed
       <li>{% include 'partials/git_sync_repo_link.html.twig' %}</li>
     {% endif %}
 </ul>
-", "partials/navigation.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark-open-publishing/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark-open-publishing/templates/partials/navigation.html.twig");
     }
 }

@@ -122,6 +122,6 @@ class __TwigTemplate_81a364abb1571674b642eb20bde11a24effc5e41fe616358f25be076a84
         {% endif %}
     </form>
 </div>
-", "partials/simplesearch_searchbox.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark-open-publishing/templates/partials/simplesearch_searchbox.html.twig");
+", "partials/simplesearch_searchbox.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark-open-publishing/templates/partials/simplesearch_searchbox.html.twig");
     }
 }

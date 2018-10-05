@@ -41,6 +41,6 @@ class __TwigTemplate_42ffa6f58438d645d46eba89897015e8522e267ced45ad2a22e89e7e116
     public function getSourceContext()
     {
         return new Twig_Source("<!--- Your global JavaScript code can go here -->
-", "partials/scripts.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark-open-publishing/templates/partials/scripts.html.twig");
+", "partials/scripts.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark-open-publishing/templates/partials/scripts.html.twig");
     }
 }

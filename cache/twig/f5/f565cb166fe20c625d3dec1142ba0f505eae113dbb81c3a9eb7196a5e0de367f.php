@@ -82,6 +82,6 @@ class __TwigTemplate_1506b1cd60003d40cbb50486d4742ea740e6ca42999b4c07e8b6b2b9bdb
  {% endblock %}
  </div>
 {% endif %}
-", "twitterfeed.html.twig", "/Users/jerrybrahm/repos/outrage/user/themes/quark-open-publishing/templates/twitterfeed.html.twig");
+", "twitterfeed.html.twig", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark-open-publishing/templates/twitterfeed.html.twig");
     }
 }

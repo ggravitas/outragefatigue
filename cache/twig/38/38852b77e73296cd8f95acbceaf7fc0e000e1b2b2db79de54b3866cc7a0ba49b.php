@@ -289,6 +289,6 @@ class __TwigTemplate_7874e4e97218bdcc085caa34cf6e27ebae7baa40847f89af2c073bcb818
 \t\tc-0.403,0.972-0.642,2.007-0.715,3.107h16.335C393.555,31.46,393.307,30.415,392.886,29.425z\"/>
 </g>
 </svg>
-", "@images/grav-logo.svg", "/Users/jerrybrahm/repos/outrage/user/themes/quark/images/grav-logo.svg");
+", "@images/grav-logo.svg", "/Users/jerrybrahm/repos/outragefatigue/user/themes/quark/images/grav-logo.svg");
     }
 }
